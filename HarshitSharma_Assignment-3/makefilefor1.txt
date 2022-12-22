@@ -1,0 +1,19 @@
+all: clean oneaworder oneawoutorder onebworder onebwoutorder onewoutsem 
+
+oneaworder:	oneaworder.c
+	gcc oneaworder.c -o oneaworder -pthread -w
+
+oneawoutorder:	oneawoutorder.c
+	gcc oneawoutorder.c -o oneawoutorder -pthread -w
+
+onebworder:	onebworder.c
+	gcc onebworder.c -o onebworder -pthread
+
+onebwoutorder:	onebwoutorder.c
+	gcc onebwoutorder.c -o onebwoutorder -pthread -w
+
+onewoutsem:	onewoutsem.c
+	gcc onewoutsem.c -o onewoutsem -pthread -w	
+
+clean :
+	rm -f oneaworder oneawoutorder onebworder onebwoutorder 
